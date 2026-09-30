@@ -1,52 +1,48 @@
 # 📊 Customer Churn Analysis
 
-An interactive customer churn analysis project built using **MySQL and Power BI** to analyze customer behavior, identify churn patterns, and generate business insights.
+An interactive customer churn analysis project developed using **MySQL and Microsoft Power BI** to analyze customer behavior, identify churn patterns, and generate meaningful business insights.
 
 ---
 
 ## 📌 Project Overview
 
-Customer churn is an important business problem that can affect customer retention and revenue.
+Customer churn is an important business problem that can affect customer retention and recurring revenue.
 
 This project analyzes customer data using **MySQL for SQL-based analysis** and **Power BI for interactive data visualization**.
 
-The analysis focuses on:
+The analysis focuses on customer characteristics, contract type, tenure, monthly charges, payment methods, internet services, and additional customer services.
 
-- Customer churn
-- Contract type
-- Customer tenure
-- Monthly charges
-- Payment methods
-- Customer services
-- Customer characteristics
-- Internet services
-
-The final Power BI dashboard contains **4 interactive pages** with KPI cards and analytical visualizations.
+The final solution combines SQL analysis, DAX calculations, and Power BI dashboards to present customer churn patterns in a clear and business-oriented format.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
-- Calculate total customers and churned customers
+The main objectives of this project are:
+
+- Calculate the total number of customers
+- Identify the number of churned customers
 - Calculate the overall churn rate
 - Analyze churn by contract type
 - Analyze churn by customer tenure
 - Analyze churn by monthly charges
 - Analyze churn by payment method
-- Analyze churn by customer services
 - Analyze churn by customer characteristics
-- Create an interactive Power BI dashboard
+- Analyze churn by customer service subscriptions
+- Build an interactive Power BI dashboard
 - Generate meaningful business insights from customer data
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-- **MySQL** — Database and SQL analysis
-- **Power BI** — Interactive dashboard and visualization
-- **DAX** — Measures and calculated columns
-- **Excel / CSV** — Source dataset
-- **GitHub** — Project documentation and version control
+| Tool / Technology | Purpose |
+|---|---|
+| **MySQL** | Database storage and SQL analysis |
+| **Power BI Desktop** | Interactive dashboard development |
+| **DAX** | Measures and calculated columns |
+| **Excel / CSV** | Source dataset and data preparation |
+| **GitHub** | Project documentation and version control |
 
 ---
 
@@ -59,13 +55,13 @@ Data Preparation
        ↓
 MySQL Database
        ↓
-SQL Analysis
+SQL Exploratory Analysis
        ↓
-Power BI Connection
+Power BI Data Connection
        ↓
-DAX Measures
+DAX Measures & Calculated Columns
        ↓
-Interactive Dashboard
+Interactive Power BI Dashboard
        ↓
 Business Insights
 ```
@@ -74,16 +70,20 @@ Business Insights
 
 ## 📊 Dataset
 
-The dataset contains **7,039 customer records** with information related to:
+The dataset contains **7,039 customer records**.
 
-### Customer Details
+The data includes information related to:
+
+### Customer Information
+
 - Customer ID
 - Gender
 - Senior Citizen
 - Partner
 - Dependents
 
-### Account Details
+### Account Information
+
 - Tenure
 - Contract
 - Paperless Billing
@@ -92,9 +92,13 @@ The dataset contains **7,039 customer records** with information related to:
 - Total Charges
 - Churn
 
-### Services
+### Phone Services
+
 - Phone Service
 - Multiple Lines
+
+### Internet Services
+
 - Internet Service
 - Online Security
 - Online Backup
@@ -103,13 +107,13 @@ The dataset contains **7,039 customer records** with information related to:
 - Streaming TV
 - Streaming Movies
 
-The target variable is:
+The target variable used for churn analysis is:
 
 ```text
 Churn
 ```
 
-with values:
+with the categories:
 
 ```text
 Yes
@@ -120,80 +124,76 @@ No
 
 # 📈 Power BI Dashboard
 
-The dashboard consists of **4 analytical pages**.
+The Power BI report contains **4 analytical pages**.
 
 ---
 
-## 1. ✦ Customer Churn Overview
+## 1. Customer Churn Overview
 
-Provides an overall view of customer churn.
+This page provides a high-level overview of customer churn.
 
-### KPI Cards
-- Total Customers — **7,039**
-- Churned Customers — **1,869**
+### Analysis
 
-### Visualizations
+- Total Customers
+- Churned Customers
 - Churn Rate by Contract
 - Churn Rate by Tenure
 - Churn Rate by Internet Service
 
-### Dashboard Preview
-
-![Customer Churn Overview](https://raw.githubusercontent.com/VemulaDivya19/Customer-Churn-Analysis/main/Screenshots/01_Customer_Churn_Overview.png)
-
 ---
 
-## 2. ✦ Customer Behavior Analysis
+## 2. Customer Behavior Analysis
 
-Analyzes churn across customer characteristics and payment behavior.
+This page analyzes customer characteristics and payment behavior.
 
-### Visualizations
+### Analysis
+
 - Churn Rate by Gender
 - Churn Rate by Senior Citizen
 - Churn Rate by Payment Method
 - Churn Rate by Online Security
 
-### Dashboard Preview
-
-![Customer Behavior Analysis](https://raw.githubusercontent.com/VemulaDivya19/Customer-Churn-Analysis/main/Screenshots/02_Customer_Behavior_Analysis.png)
-
 ---
 
-## 3. ✦ Customer Services & Retention
+## 3. Customer Services & Retention
 
-Analyzes the relationship between customer service usage and churn.
+This page analyzes customer service usage and its relationship with observed churn patterns.
 
-### Visualizations
+### Analysis
+
 - Churn Rate by Tech Support
 - Churn Rate by Online Backup
 - Churn Rate by Device Protection
 - Churn Rate by Multiple Lines
 
-### Dashboard Preview
-
-![Customer Services & Retention](https://raw.githubusercontent.com/VemulaDivya19/Customer-Churn-Analysis/main/Screenshots/03_Customer_Services_Retention.png)
-
 ---
 
-## 4. ✦ Churn Risk & Revenue Analysis
+## 4. Churn Risk & Revenue Analysis
 
-Analyzes financial and account-related churn patterns.
+This page focuses on financial and account-related churn patterns.
 
-### Visualizations
+### Analysis
+
 - Churn Rate by Monthly Charges
 - Churn Rate by Contract
 - Churn Rate by Payment Method
 - Churn Rate by Tenure
 
-### Dashboard Preview
+---
 
-![Churn Risk & Revenue Analysis](https://raw.githubusercontent.com/VemulaDivya19/Customer-Churn-Analysis/main/Screenshots/04_Churn_Risk_Revenue_Analysis.png)
+# 📌 Overall Metrics
+
+| Metric | Value |
+|---|---:|
+| Total Customers | **7,039** |
+| Churned Customers | **1,869** |
+| Overall Churn Rate | **26.55%** |
 
 ---
 
-# 🔎 Key Insights
+# 🔎 Key Business Insights
 
-### 📄 Contract
+## Contract Type
 
 | Contract | Churn Rate |
 |---|---:|
@@ -201,11 +201,11 @@ Analyzes financial and account-related churn patterns.
 | One year | **11.3%** |
 | Two year | **2.8%** |
 
-Month-to-month customers have the highest observed churn rate among the contract categories.
+Month-to-month customers show the highest observed churn rate among the contract categories.
 
 ---
 
-### ⏳ Tenure
+## Customer Tenure
 
 | Tenure Group | Churn Rate |
 |---|---:|
@@ -214,11 +214,11 @@ Month-to-month customers have the highest observed churn rate among the contract
 | 25–48 months | **20.4%** |
 | 49–72 months | **9.5%** |
 
-Customers with shorter tenure show higher observed churn rates.
+Customers with shorter tenure show higher observed churn rates in the analyzed dataset.
 
 ---
 
-### 💰 Monthly Charges
+## Monthly Charges
 
 | Monthly Charges | Churn Rate |
 |---|---:|
@@ -226,11 +226,11 @@ Customers with shorter tenure show higher observed churn rates.
 | Medium (₹30–₹70) | **24.4%** |
 | High (> ₹70) | **35.4%** |
 
-The high monthly-charge group has the highest observed churn rate.
+The high monthly-charge group has the highest observed churn rate among the three charge groups.
 
 ---
 
-### 💳 Payment Method
+## Payment Method
 
 | Payment Method | Churn Rate |
 |---|---:|
@@ -243,7 +243,7 @@ Electronic check customers show the highest observed churn rate among the analyz
 
 ---
 
-### 🛡️ Online Security
+## Online Security
 
 | Online Security | Churn Rate |
 |---|---:|
@@ -251,11 +251,11 @@ Electronic check customers show the highest observed churn rate among the analyz
 | Yes | **14.6%** |
 | No internet service | **7.4%** |
 
-Customers without Online Security show a higher observed churn rate.
+Customers without Online Security show a higher observed churn rate than customers with the service.
 
 ---
 
-### 🛠️ Tech Support
+## Tech Support
 
 | Tech Support | Churn Rate |
 |---|---:|
@@ -263,11 +263,11 @@ Customers without Online Security show a higher observed churn rate.
 | Yes | **15.2%** |
 | No internet service | **7.4%** |
 
-Customers without Tech Support show a higher observed churn rate.
+Customers without Tech Support show a higher observed churn rate than customers with Tech Support.
 
 ---
 
-### ☁️ Online Backup
+## Online Backup
 
 | Online Backup | Churn Rate |
 |---|---:|
@@ -279,7 +279,7 @@ Customers without Online Backup show a higher observed churn rate.
 
 ---
 
-### 🔐 Device Protection
+## Device Protection
 
 | Device Protection | Churn Rate |
 |---|---:|
@@ -291,26 +291,38 @@ Customers without Device Protection show a higher observed churn rate.
 
 ---
 
-## 📌 Overall Metrics
+## Gender
 
-| Metric | Value |
+| Gender | Churn Rate |
 |---|---:|
-| Total Customers | **7,039** |
-| Churned Customers | **1,869** |
-| Overall Churn Rate | **26.55%** |
+| Female | **26.9%** |
+| Male | **26.2%** |
+
+The observed churn rates are relatively close between the two gender categories.
+
+---
+
+## Senior Citizen
+
+| Customer Category | Churn Rate |
+|---|---:|
+| Non-Senior Citizen | **23.6%** |
+| Senior Citizen | **41.7%** |
+
+The senior-citizen category has a higher observed churn rate in the analyzed dataset.
 
 ---
 
 # 🧮 DAX Measures
 
-### Total Customers
+## Total Customers
 
 ```DAX
 Total Customers =
 COUNTROWS('customer_churn customers')
 ```
 
-### Churned Customers
+## Churned Customers
 
 ```DAX
 Churned Customers =
@@ -320,7 +332,7 @@ CALCULATE(
 )
 ```
 
-### Churn Rate
+## Churn Rate
 
 ```DAX
 Churn Rate KPI =
@@ -338,7 +350,7 @@ DIVIDE(
 
 # 🧮 Calculated Columns
 
-### Tenure Group
+## Tenure Group
 
 ```DAX
 Tenure Group =
@@ -352,7 +364,7 @@ SWITCH(
 )
 ```
 
-### Monthly Charges Group
+## Monthly Charges Group
 
 ```DAX
 Monthly Charges Group =
@@ -368,15 +380,15 @@ SWITCH(
 
 # 🗄️ SQL Analysis
 
-MySQL was used to perform customer churn analysis using SQL queries.
+MySQL was used to perform exploratory customer churn analysis.
 
 The SQL analysis includes:
 
 - Total customer count
 - Churned customer count
 - Overall churn rate
-- Churn by contract
-- Churn by tenure
+- Churn by contract type
+- Churn by customer tenure
 - Churn by monthly charges
 - Churn by gender
 - Churn by payment method
@@ -387,9 +399,54 @@ The SQL analysis includes:
 - Churn by Multiple Lines
 - Churn by Internet Service
 
-The complete SQL script is available here:
+The complete SQL script is available in:
 
-**[SQL Analysis](SQL/customer_churn_analysis.sql)**
+```text
+SQL/customer_churn_analysis.sql
+```
+
+---
+
+# 💡 Business Interpretation
+
+The analysis identifies several notable patterns within the dataset:
+
+- Month-to-month customers show substantially higher observed churn than customers on longer contracts.
+- Customers with shorter tenure show higher observed churn.
+- Higher monthly-charge groups show higher observed churn.
+- Electronic check customers show the highest observed churn among the analyzed payment methods.
+- Customers without Online Security show higher observed churn.
+- Customers without Tech Support show higher observed churn.
+- Customers without Online Backup show higher observed churn.
+- Customers without Device Protection show higher observed churn.
+
+These findings describe patterns and associations in the analyzed dataset and do not by themselves establish causation.
+
+---
+
+# 🎨 Dashboard Design
+
+The Power BI dashboard uses a **Whimsical Sage & Cream** theme.
+
+### Main Color Palette
+
+| Element | Color |
+|---|---|
+| Sage Green | `RGB 158, 177, 149` |
+| Warm Cream | `RGB 255, 253, 249` |
+| Dark Sage Text | `RGB 62, 69, 58` |
+| Beige Border | `RGB 218, 211, 201` |
+
+The dashboard uses:
+
+- Consistent visual formatting
+- KPI cards
+- Data labels
+- Rounded visual containers
+- Subtle shadows
+- Consistent typography
+- Page navigation
+- Business-focused visualizations
 
 ---
 
@@ -418,64 +475,66 @@ Customer-Churn-Analysis/
 
 ---
 
-# 🎨 Dashboard Design
+# 📂 Project Files
 
-The dashboard uses a **Whimsical Sage & Cream** theme.
+### Power BI
 
-### Color Palette
+```text
+PowerBI/Customer_Churn_Analysis.pbix
+```
 
-- Sage Green — `RGB 158, 177, 149`
-- Warm Cream — `RGB 255, 253, 249`
-- Dark Sage Text — `RGB 62, 69, 58`
-- Beige Border — `RGB 218, 211, 201`
+Contains the complete Power BI report, including:
 
-The dashboard includes:
+- Dashboard pages
+- DAX measures
+- Calculated columns
+- Visualizations
+- Page navigation
+- Dashboard formatting
 
-- Consistent page navigation
-- KPI cards
-- Data labels
-- Rounded visual cards
-- Subtle shadows
-- Consistent typography
-- Interactive Power BI visuals
+### SQL
 
----
+```text
+SQL/customer_churn_analysis.sql
+```
 
-# 💡 Business Interpretation
+Contains the SQL queries used for customer churn analysis.
 
-The analysis shows several notable patterns in the dataset:
+### Screenshots
 
-- Month-to-month customers have a substantially higher observed churn rate than customers on longer contracts.
-- Customers with shorter tenure show higher observed churn.
-- Higher monthly-charge groups show higher observed churn.
-- Electronic check customers have the highest observed churn among the payment methods analyzed.
-- Customers without Online Security and Tech Support show higher observed churn rates.
-- Customers without Online Backup and Device Protection also show higher observed churn rates.
+```text
+Screenshots/
+```
 
-These findings describe **patterns and associations in the dataset** and do not by themselves establish causation.
+Contains dashboard screenshots for project reference.
 
 ---
 
 # 🚀 Skills Demonstrated
 
-### SQL & MySQL
+## SQL & MySQL
+
 - SQL querying
-- Filtering
+- Data filtering
 - Aggregation
-- GROUP BY
-- CASE statements
+- `GROUP BY`
+- `CASE` statements
 - Conditional aggregation
 - Churn-rate calculations
+- Customer segmentation
 
-### Power BI
+## Power BI
+
 - Interactive dashboard development
 - Data visualization
 - KPI cards
+- Clustered column charts
 - Page navigation
 - Dashboard formatting
 - Business intelligence reporting
 
-### DAX
+## DAX
+
 - Measures
 - Calculated columns
 - `COUNTROWS`
@@ -484,52 +543,30 @@ These findings describe **patterns and associations in the dataset** and do not 
 - `SWITCH`
 - Conditional calculations
 
-### Data Analytics
+## Data Analytics
+
 - Exploratory data analysis
 - Customer segmentation
 - Churn analysis
+- KPI analysis
 - Business insight generation
 - Data storytelling
 
 ---
 
-# 📂 Project Files
-
-### Power BI Dashboard
-
-`PowerBI/Customer_Churn_Analysis.pbix`
-
-Contains the complete interactive Power BI report.
-
-### SQL Script
-
-`SQL/customer_churn_analysis.sql`
-
-Contains the SQL queries used for churn analysis.
-
-### Dashboard Screenshots
-
-`Screenshots/`
-
-Contains screenshots of all four dashboard pages.
-
-### Dataset
-
-The raw dataset is not included in the public repository.
-
----
-
-# ⚠️ Project Scope
+# ⚠️ Project Scope & Limitations
 
 This project focuses on **descriptive and exploratory customer churn analysis**.
 
-The dashboard identifies patterns within the available customer data but does not currently include:
+The current project does not include:
 
-- Machine learning
-- Predictive churn modeling
-- Real-time data
-- Automated data refresh
+- Predictive machine learning
 - Individual customer churn prediction
+- Real-time customer data
+- Automated data refresh
+- Causal analysis
+
+The results represent patterns observed within the analyzed dataset.
 
 ---
 
@@ -537,13 +574,14 @@ The dashboard identifies patterns within the available customer data but does no
 
 Potential future improvements include:
 
-- Publishing the dashboard as an interactive web report
-- Adding a live Power BI dashboard link
-- Building a customer churn prediction model using Python
+- Publishing the Power BI dashboard as an interactive web report
+- Adding a live dashboard link
+- Developing a customer churn prediction model using Python
 - Adding customer-risk segmentation
 - Adding revenue-impact analysis
-- Adding automated data refresh
+- Implementing automated data refresh
 - Adding additional business KPIs
+- Integrating predictive analytics
 
 ---
 
@@ -553,7 +591,7 @@ Potential future improvements include:
 
 **B.Tech — Civil Engineering | Aspiring Data Analyst**
 
-### Skills
+### Technical Skills
 
 - SQL
 - MySQL
@@ -562,6 +600,7 @@ Potential future improvements include:
 - Python
 - Data Analytics
 - Data Visualization
+- Business Intelligence
 
 ### GitHub
 
@@ -575,9 +614,9 @@ Potential future improvements include:
 
 # ⭐ Project Summary
 
-**Customer Churn Analysis** demonstrates the use of **MySQL, SQL, Power BI, and DAX** to transform customer data into an interactive business intelligence dashboard.
+**Customer Churn Analysis** demonstrates the practical use of **MySQL, SQL, Power BI, and DAX** to analyze customer data and develop an interactive business intelligence dashboard.
 
-The project combines SQL-based analysis with Power BI visualization to identify customer churn patterns across contracts, tenure, monthly charges, payment methods, customer characteristics, and service subscriptions.
+The project combines database analysis, analytical calculations, visualization, and business interpretation to identify customer churn patterns across contracts, tenure, monthly charges, payment methods, customer characteristics, and service subscriptions.
 
 ---
 
