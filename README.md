@@ -139,7 +139,7 @@ Provides an overall view of customer churn.
 
 ### Dashboard Preview
 
-![Customer Churn Overview](Screenshots/01_Customer_Churn_Overview.png)
+![Customer Churn Overview](./Screenshots/01_Customer_Churn_Overview.png)
 
 ---
 
@@ -155,7 +155,7 @@ Analyzes churn across customer characteristics and payment behavior.
 
 ### Dashboard Preview
 
-![Customer Behavior Analysis](Screenshots/02_Customer_Behavior_Analysis.png)
+![Customer Behavior Analysis](./Screenshots/02_Customer_Behavior_Analysis.png)
 
 ---
 
@@ -171,7 +171,7 @@ Analyzes the relationship between customer service usage and churn.
 
 ### Dashboard Preview
 
-![Customer Services & Retention](Screenshots/03_Customer_Services_Retention.png)
+![Customer Services & Retention](./Screenshots/03_Customer_Services_Retention.png)
 
 ---
 
@@ -187,7 +187,7 @@ Analyzes financial and account-related churn patterns.
 
 ### Dashboard Preview
 
-![Churn Risk & Revenue Analysis](Screenshots/04_Churn_Risk_Revenue_Analysis.png)
+![Churn Risk & Revenue Analysis](./Screenshots/04_Churn_Risk_Revenue_Analysis.png)
 
 ---
 
